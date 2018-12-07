@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prlang name="Java"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <author>James Gosling</author>
+   <performance>
+      <time>fast</time>
+      <memory>bad</memory>
+   </performance>
+   <isstatictyped>true</isstatictyped>
+   <slogan>Write Once - Run Anywhere</slogan>
+</prlang>
