@@ -1,1 +1,1 @@
-# XML-against-XSD-validation-service
+# XML-against-XSD-validation-service [![Build Status](https://travis-ci.org/lamtev/XML-against-XSD-validation-service.svg?branch=master)](https://travis-ci.org/lamtev/XML-against-XSD-validation-service) [![codecov](https://codecov.io/gh/lamtev/XML-against-XSD-validation-service/branch/master/graph/badge.svg)](https://codecov.io/gh/lamtev/XML-against-XSD-validation-service)
