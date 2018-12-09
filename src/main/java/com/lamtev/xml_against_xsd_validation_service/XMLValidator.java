@@ -10,16 +10,19 @@ import java.io.InputStream;
 
 import static javax.xml.XMLConstants.W3C_XML_SCHEMA_NS_URI;
 
+
 /**
  * XMLValidator - validates XML against XSD
+ *
+ * @author Anton Lamtev
  */
 final class XMLValidator {
     /**
-     * Validates XML against XSD both passed as InputStream
+     * Validates XML against XSD both passed as {@link InputStream}
      *
-     * @param xml XML file inputStream
-     * @param xsd XSD file inputStream
-     * @return true if XML is valid and false otherwise
+     * @param xml {@link InputStream} instance containing XML file
+     * @param xsd {@link InputStream} instance containing XSD file
+     * @return {@code true} if XML is valid against XSD and false otherwise
      */
     static boolean isXMLValidAgainstXSD(@NotNull final InputStream xml,
                                         @NotNull final InputStream xsd) {

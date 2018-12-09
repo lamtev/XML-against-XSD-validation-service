@@ -18,7 +18,7 @@ dependencies {
     compile("com.intellij:annotations:12.0")
     compile("org.springframework.boot:spring-boot-starter-web")
 
-    testCompile("org.springframework.boot:spring-boot-starter-test") {
+    testRuntimeOnly("org.springframework.boot:spring-boot-starter-test") {
         exclude(module = "junit")
     }
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.2")
