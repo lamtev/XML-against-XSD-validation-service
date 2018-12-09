@@ -2,8 +2,15 @@ package com.lamtev.xml_against_xsd_validation_service;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+
+/**
+ * XMLValidator unit test
+ *
+ * @author Anton Lamtev
+ */
 class XMLValidatorTest {
 
     @Test
