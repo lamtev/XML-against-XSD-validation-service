@@ -66,7 +66,7 @@ or it can be run manually in manner described in that script
 
 ### HTTP-client to quickly play with service
 
-You can use [Postman HTTP-client](https://www.getpostman.com/) for this reason. Form a request in a way it formed in figure below:
+You can use [Postman HTTP-client](https://www.getpostman.com/) for this case. Form a request in a way it formed in figure below:
 
 ![Request](/figs/request.png)
 
