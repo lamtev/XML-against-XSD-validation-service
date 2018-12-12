@@ -51,13 +51,13 @@ tasks.withType<Test> {
     finalizedBy(jacocoReport)
 }
 
-tasks.withType<BootJar> {
+val bootJar = tasks.withType<BootJar> {
     baseName = serviceName
     version = project.version as String
     mainClassName = "com.lamtev.xml_against_xsd_validation_service.ServiceLauncher"
 }
 
-val buildDockerImage = tasks.create("buildDockerImage", type = DockerBuildImage::class) {
+tasks.create("buildDockerImage", type = DockerBuildImage::class) {
     inputDir.set(file("."))
     tag.set("lamtev/xml-against-xsd-validation-service:latest")
 }
@@ -76,4 +76,5 @@ tasks.create("runService", type = JavaExec::class) {
                 else -> ""
             }
     )
+    dependsOn(bootJar)
 }

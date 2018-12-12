@@ -31,7 +31,15 @@ public final class Api {
      * <p>
      * Request format:
      * Content-Type:    multipart/form-data
-     * Body:            key=xml, value=*.xml; key=xsd, value=*.xsd.
+     * Body:
+     * <p>
+     * Content-Disposition: form-data; name="xml"; filename="somemxl.xml"
+     * Content-Type: text/plain
+     * content of somefile.xml.
+     * <p>
+     * Content-Disposition: form-data; name="xsd"; filename="somexsd.xsd"
+     * Content-Type: text/plain
+     * content of somexsd.xsd.
      * <p>
      * Request format:
      * Content-Type:    application/json;charset=UTF-8
