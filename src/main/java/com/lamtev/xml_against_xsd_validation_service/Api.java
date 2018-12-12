@@ -35,6 +35,7 @@ public final class Api {
      * <p>
      * Request format:
      * Content-Type:    application/json;charset=UTF-8
+     * Status-Code:     202 (Accepted)
      * Body:            json with field "valid" equal to "true" or "false".
      *
      * @param xml XML file - a part of multipart/form-data request body. Value for key "xml".
