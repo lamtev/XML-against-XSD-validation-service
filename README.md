@@ -44,11 +44,11 @@ Content-Type:    application/json;charset=UTF-8
 
 You don't need to build from source to use this service, because there is complete jar in [releases](https://github.com/lamtev/XML-against-XSD-validation-service/releases), but if you want, jar can be built with gradle 
  
-`$ gradlew bootJar`
+`$ ./gradlew bootJar`
 
 To start running service use gradle command
 
-`$ gradlew runService`
+`$ ./gradlew runService`
 
 ### Docker container (preffered way)
 
