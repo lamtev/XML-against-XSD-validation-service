@@ -10,10 +10,10 @@ Method:          POST
 Path:            /validate
 Content-Type:    multipart/form-data
 -------------------------------------------------------------------
-Content-Disposition: form-data; name="xml"; filename="somemxl.xml"
+Content-Disposition: form-data; name="xml"; filename="somexml.xml"
 Content-Type: text/plain
 
-content of somefile.xml.
+content of somexml.xml.
 -------------------------------------------------------------------
 Content-Disposition: form-data; name="xsd"; filename="somexsd.xsd"
 Content-Type: text/plain
@@ -50,7 +50,7 @@ To start running service use gradle command
 
 `$ ./gradlew runService`
 
-### Docker container (preffered way)
+### Docker container (preferred way)
 
 See [Dockerfile](https://github.com/lamtev/XML-against-XSD-validation-service/blob/master/Dockerfile)
 
