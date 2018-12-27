@@ -37,7 +37,7 @@ class ApiTest {
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(APPLICATION_JSON_UTF8_VALUE))
-                .andExpect(jsonPath("$.status", is("OK")));
+                .andExpect(jsonPath("$.status", is("ONLINE")));
     }
 
     @Test

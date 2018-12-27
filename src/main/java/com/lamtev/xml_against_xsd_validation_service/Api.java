@@ -25,7 +25,7 @@ public final class Api {
 
     private final static String XML_IS_VALID_JSON = "{\"valid\" : \"true\"}";
     private final static String XML_IS_NOT_VALID_JSON = "{\"valid\" : \"false\"}";
-    private final static String STATUS_OK_JSON = "{\"status\" : \"OK\"}";
+    private final static String STATUS_ONLINE_JSON = "{\"status\" : \"ONLINE\"}";
 
     /**
      * Check service status
@@ -38,12 +38,12 @@ public final class Api {
      * Content-Type:    application/json;charset=UTF-8
      * Status-Code:     200 (OK)
      *
-     * @return json with field "status" equal to "OK".
+     * @return json with field "status" equal to "ONLINE".
      */
     @GetMapping(path = "/status", produces = APPLICATION_JSON_UTF8_VALUE)
     @ResponseStatus(OK)
     public String status() {
-        return STATUS_OK_JSON;
+        return STATUS_ONLINE_JSON;
     }
 
     /**
